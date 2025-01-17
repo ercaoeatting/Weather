@@ -1,0 +1,26 @@
+[
+ {
+  "directory": "/root/CPP/project/public",
+  "arguments": [
+   "g++",
+   "-fPIC",
+   "-shared",
+   "-o",
+   "lib_public.so",
+   "_public.cpp"
+  ],
+  "file": "_public.cpp"
+ },
+ {
+  "directory": "/root/CPP/project/public",
+  "arguments": [
+   "gcc",
+   "-fPIC",
+   "-shared",
+   "-o",
+   "libftp.so",
+   "ftplib.c"
+  ],
+  "file": "ftplib.c"
+ }
+]
