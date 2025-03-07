@@ -9,7 +9,7 @@ using namespace idc;
 int main()
 {
     string strtime;
-    strtime="2020-01-01 12:35:22";
+    strtime="2020-01-01 d12:35:22";
 
     time_t ttime;
     ttime=strtotime(strtime);        // 转换为整数的时间

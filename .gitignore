@@ -35,3 +35,12 @@ test.cpp
 Makefile
 demo*
 test.cpp
+*.py
+build/*
+test
+CMakeLists.txt
+**/.cache
+**/.vscode
+demo
+demo[0-9]*
+!demo*.cpp
