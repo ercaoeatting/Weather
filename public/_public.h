@@ -302,11 +302,10 @@ bool setmtime(const string &filename, const string &mtime);
 // 获取某目录及其子目录中的文件列表的类。
 class cdir {
 private:
-    vector<string> m_filelist; // 存放文件列表的容器（绝对路径的文件名）。
-    int m_pos;                 // 从文件列表m_filelist中已读取文件的位置。
-    string m_fmt;              // 文件时间格式，缺省"yyyymmddhh24miss"。
-
-    cdir(const cdir &) = delete;            // 禁用拷贝构造函数。
+    vector<string> m_filelist;   // 存放文件列表的容器（绝对路径的文件名）。
+    int m_pos;                   // 从文件列表m_filelist中已读取文件的位置。
+    string m_fmt;                // 文件时间格式，缺省"yyyymmddhh24miss"。
+    cdir(const cdir &) = delete; // 禁用拷贝构造函数。
     cdir &operator=(const cdir &) = delete; // 禁用赋值函数。
 public:
     // /project/public/_public.h

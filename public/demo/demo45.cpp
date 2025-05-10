@@ -42,6 +42,7 @@ int main(int argc,char *argv[])
         {
             printf("tcpserver.write() failed.\n"); break;
         }
+         
         cout << "发送：" << sendbuf << endl;
     }
 }

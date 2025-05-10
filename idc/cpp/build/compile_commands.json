@@ -1,0 +1,17 @@
+[
+ {
+  "directory": "/home/han/CPP/Weather/idc/cpp",
+  "arguments": [
+   "g++",
+   "-g",
+   "-o",
+   "crtsurfdata",
+   "crtsurfdata.cpp",
+   "-I/home/han/CPP/Weather/public",
+   "/home/han/CPP/Weather/public/_public.cpp",
+   "-lm",
+   "-lc"
+  ],
+  "file": "/home/han/CPP/Weather/public/_public.cpp"
+ }
+]
