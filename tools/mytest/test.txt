@@ -1,0 +1,1245 @@
+I[21:19:16.866] Ubuntu clangd version 18.1.3 (1ubuntu1)
+I[21:19:16.866] Features: linux+grpc
+I[21:19:16.866] PID: 17517
+I[21:19:16.866] Working directory: /home/han/CPP/Weather/tools/mytest
+I[21:19:16.866] argv[0]: clangd-18
+I[21:19:16.866] argv[1]: --check=procctl.cpp
+I[21:19:16.866] argv[2]: --log=verbose
+V[21:19:16.866] User config file is /home/han/.config/clangd/config.yaml
+I[21:19:16.867] Entering check mode (no LSP server)
+I[21:19:16.867] Testing on source file /home/han/CPP/Weather/tools/mytest/procctl.cpp
+V[21:19:16.869] config note at /home/han/CPP/.clangd:1:0: Parsing config fragment
+V[21:19:16.869] config note at /home/han/CPP/.clangd:1:0: Parsed 1 fragments from file
+V[21:19:16.869] Config fragment: compiling /home/han/CPP/.clangd:1 -> 0x000055D6A5B1EE10 (trusted=false)
+V[21:19:16.869] config note at /home/han/CPP/Weather/.clangd:1:0: Parsing config fragment
+V[21:19:16.869] config note at /home/han/CPP/Weather/.clangd:1:0: Parsed 1 fragments from file
+V[21:19:16.869] Config fragment: compiling /home/han/CPP/Weather/.clangd:1 -> 0x000055D6A5B3C400 (trusted=false)
+V[21:19:16.871] config note at /home/han/.config/clangd/config.yaml:2:0: Parsing config fragment
+V[21:19:16.871] config note at /home/han/.config/clangd/config.yaml:1:0: Parsed 1 fragments from file
+V[21:19:16.871] Config fragment: compiling /home/han/.config/clangd/config.yaml:2 -> 0x000055D6A5B3C8D0 (trusted=true)
+V[21:19:16.872] Config fragment: compiling <unknown>:0 -> 0x000055D6A5B3C4A0 (trusted=false)
+I[21:19:16.873] Loading compilation database...
+I[21:19:16.925] Loaded compilation database from /home/han/CPP/Weather/tools/mytest/compile_commands.json
+V[21:19:16.926] Broadcasting compilation database from /home/han/CPP/Weather/tools/mytest
+I[21:19:16.926] Compile command from CDB is: [/home/han/CPP/Weather/tools/mytest] /usr/bin/g++ --driver-mode=g++ -g -Wall -std=c++20 -o procctl -std=c++20 -std=c++20 -I/root/CPP/project/public --no-cuda-version-check -Wno-unknown-warning-option -D__clangd__ -resource-dir=/usr/lib/llvm-18/lib/clang/18 -- /home/han/CPP/Weather/tools/mytest/procctl.cpp
+I[21:19:16.927] Parsing command...
+V[21:19:16.934] Ignored diagnostic. argument unused during compilation: '--no-cuda-version-check'
+I[21:19:16.936] internal (cc1) args are: -cc1 -triple x86_64-pc-linux-gnu -fsyntax-only -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name procctl.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debug-info-kind=constructor -dwarf-version=5 -debugger-tuning=gdb -fdebug-compilation-dir=/home/han/CPP/Weather/tools/mytest -fcoverage-compilation-dir=/home/han/CPP/Weather/tools/mytest -resource-dir /usr/lib/llvm-18/lib/clang/18 -I /root/CPP/project/public -D __clangd__ -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/x86_64-linux-gnu/c++/13 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/backward -internal-isystem /usr/lib/llvm-18/lib/clang/18/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -Wall -Wno-unknown-warning-option -std=c++20 -fdeprecated-macro -ferror-limit 19 -fgnuc-version=4.2.1 -fno-implicit-modules -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -no-round-trip-args -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -x c++ /home/han/CPP/Weather/tools/mytest/procctl.cpp
+I[21:19:16.938] Building preamble...
+I[21:19:16.988] Built preamble of size 697956 for file /home/han/CPP/Weather/tools/mytest/procctl.cpp version null in 0.05 seconds
+I[21:19:16.988] Indexing headers...
+V[21:19:16.999] indexed preamble AST for /home/han/CPP/Weather/tools/mytest/procctl.cpp version null:
+  symbol slab: 2314 symbols, 651656 bytes
+  ref slab: 0 symbols, 0 refs, 128 bytes
+  relations slab: 0 relations, 24 bytes
+V[21:19:17.004] Build dynamic index for header symbols with estimated memory usage of 2373528 bytes
+I[21:19:17.006] Building AST...
+I[21:19:17.020] Indexing AST...
+V[21:19:17.020] indexed file AST for /home/han/CPP/Weather/tools/mytest/procctl.cpp version null:
+  symbol slab: 1 symbols, 4448 bytes
+  ref slab: 14 symbols, 28 refs, 4608 bytes
+  relations slab: 0 relations, 24 bytes
+V[21:19:17.020] Build dynamic index for main-file symbols with estimated memory usage of 12744 bytes
+I[21:19:17.020] Building inlay hints
+V[21:19:17.021]   parameter 10:15 format:
+V[21:19:17.021]   parameter 11:15 format:
+V[21:19:17.021]   parameter 12:15 format:
+V[21:19:17.021]   parameter 15:15 format:
+V[21:19:17.021]   parameter 16:15 format:
+V[21:19:17.021]   parameter 17:15 format:
+V[21:19:17.021]   parameter 18:15 format:
+V[21:19:17.021]   parameter 19:15 format:
+V[21:19:17.021]   parameter 20:15 format:
+V[21:19:17.021]   parameter 21:15 format:
+V[21:19:17.021]   parameter 22:15 format:
+V[21:19:17.021]   parameter 31:15 sig:
+V[21:19:17.021]   parameter 31:19 handler:
+V[21:19:17.021]   parameter 32:14 fd:
+V[21:19:17.021]   parameter 37:13 status:
+V[21:19:17.021]   parameter 41:11 sig:
+V[21:19:17.021]   parameter 41:20 handler:
+V[21:19:17.021]   parameter 54:18 path:
+V[21:19:17.021]   parameter 54:27 argv:
+V[21:19:17.021]   parameter 55:17 status:
+V[21:19:17.021]   parameter 60:17 stat_loc:
+V[21:19:17.021]   parameter 61:18 seconds:
+V[21:19:17.021]   parameter 61:23 nptr:
+I[21:19:17.021] Building semantic highlighting
+V[21:19:17.022]  7:4-7:8 Function 131075
+V[21:19:17.022]  7:13-7:17 Parameter 16387
+V[21:19:17.022]  7:25-7:29 Parameter 16387
+V[21:19:17.022]  9:8-9:12 Parameter 16384
+V[21:19:17.022]  9:13-9:14 Operator 0
+V[21:19:17.022]  10:8-10:14 Function 131584
+V[21:19:17.022]  11:8-11:14 Function 131584
+V[21:19:17.022]  12:8-12:14 Function 131584
+V[21:19:17.022]  15:8-15:14 Function 131584
+V[21:19:17.022]  16:8-16:14 Function 131584
+V[21:19:17.022]  17:8-17:14 Function 131584
+V[21:19:17.022]  18:8-18:14 Function 131584
+V[21:19:17.022]  19:8-19:14 Function 131584
+V[21:19:17.022]  20:8-20:14 Function 131584
+V[21:19:17.022]  21:8-21:14 Function 131584
+V[21:19:17.022]  22:8-22:14 Function 131584
+V[21:19:17.022]  23:15-23:16 Operator 0
+V[21:19:17.022]  30:13-30:15 LocalVariable 16387
+V[21:19:17.022]  30:21-30:23 LocalVariable 16384
+V[21:19:17.022]  30:24-30:25 Operator 0
+V[21:19:17.022]  30:30-30:32 LocalVariable 16384
+V[21:19:17.022]  30:32-30:34 Operator 0
+V[21:19:17.022]  31:8-31:14 Function 131584
+V[21:19:17.022]  31:15-31:17 LocalVariable 16384
+V[21:19:17.022]  31:19-31:26 Macro 131072
+V[21:19:17.022]  32:8-32:13 Function 131584
+V[21:19:17.022]  32:14-32:16 LocalVariable 16384
+V[21:19:17.022]  36:8-36:12 Function 131584
+V[21:19:17.022]  36:15-36:17 Operator 0
+V[21:19:17.022]  37:8-37:12 Function 66048
+V[21:19:17.022]  41:4-41:10 Function 131584
+V[21:19:17.022]  41:11-41:18 Macro 131072
+V[21:19:17.022]  41:20-41:27 Macro 131072
+V[21:19:17.022]  44:10-44:15 LocalVariable 16387
+V[21:19:17.022]  44:16-44:20 Parameter 16384
+V[21:19:17.022]  45:13-45:15 LocalVariable 16387
+V[21:19:17.022]  45:21-45:23 LocalVariable 16384
+V[21:19:17.022]  45:24-45:25 Operator 0
+V[21:19:17.022]  45:26-45:30 Parameter 16384
+V[21:19:17.022]  45:32-45:34 LocalVariable 16384
+V[21:19:17.022]  45:34-45:36 Operator 0
+V[21:19:17.022]  46:8-46:13 LocalVariable 16384
+V[21:19:17.022]  46:14-46:16 LocalVariable 16384
+V[21:19:17.022]  46:17-46:18 Operator 0
+V[21:19:17.022]  46:22-46:23 Operator 0
+V[21:19:17.022]  46:24-46:28 Parameter 16384
+V[21:19:17.022]  46:29-46:31 LocalVariable 16384
+V[21:19:17.022]  49:4-49:9 LocalVariable 16384
+V[21:19:17.022]  49:10-49:14 Parameter 16384
+V[21:19:17.022]  49:15-49:16 Operator 0
+V[21:19:17.022]  49:20-49:21 Operator 0
+V[21:19:17.022]  52:12-52:16 Function 131584
+V[21:19:17.022]  52:19-52:21 Operator 0
+V[21:19:17.022]  54:12-54:17 Function 131584
+V[21:19:17.022]  54:18-54:22 Parameter 16384
+V[21:19:17.022]  54:27-54:32 LocalVariable 16384
+V[21:19:17.022]  55:12-55:16 Function 66048
+V[21:19:17.022]  60:12-60:16 Function 131584
+V[21:19:17.022]  61:12-61:17 Function 131584
+V[21:19:17.022]  61:18-61:22 Function 66048
+V[21:19:17.022]  61:23-61:27 Parameter 16384
+I[21:19:17.022] Testing features at each token (may be slow in large files)
+V[21:19:17.022]   1:0 #
+V[21:19:17.022]     definition: 1
+V[21:19:17.022]     hover: true
+V[21:19:17.023]     documentHighlight: 0
+V[21:19:17.023]   1:1 include
+V[21:19:17.023]     definition: 1
+V[21:19:17.023]     hover: true
+V[21:19:17.023]     documentHighlight: 0
+V[21:19:17.023]   1:9 <
+V[21:19:17.023]     definition: 1
+V[21:19:17.023]     hover: true
+V[21:19:17.023]     documentHighlight: 0
+V[21:19:17.023]   1:10 cstdio
+V[21:19:17.023]     definition: 1
+V[21:19:17.023]     hover: true
+V[21:19:17.023]     documentHighlight: 0
+V[21:19:17.023]   1:16 >
+V[21:19:17.023]     definition: 1
+V[21:19:17.023]     hover: true
+V[21:19:17.023]     documentHighlight: 0
+V[21:19:17.023]   2:0 #
+V[21:19:17.023]     definition: 1
+V[21:19:17.023]     hover: true
+V[21:19:17.023]     documentHighlight: 0
+V[21:19:17.023]   2:1 include
+V[21:19:17.024]     definition: 1
+V[21:19:17.024]     hover: true
+V[21:19:17.024]     documentHighlight: 0
+V[21:19:17.024]   2:9 <
+V[21:19:17.024]     definition: 1
+V[21:19:17.024]     hover: true
+V[21:19:17.024]     documentHighlight: 0
+V[21:19:17.024]   2:10 stdlib
+V[21:19:17.024]     definition: 1
+V[21:19:17.024]     hover: true
+V[21:19:17.024]     documentHighlight: 0
+V[21:19:17.024]   2:16 .
+V[21:19:17.024]     definition: 1
+V[21:19:17.024]     hover: true
+V[21:19:17.024]     documentHighlight: 0
+V[21:19:17.024]   2:17 h
+V[21:19:17.024]     definition: 1
+V[21:19:17.024]     hover: true
+V[21:19:17.024]     documentHighlight: 0
+V[21:19:17.024]   2:18 >
+V[21:19:17.024]     definition: 1
+V[21:19:17.024]     hover: true
+V[21:19:17.024]     documentHighlight: 0
+V[21:19:17.024]   3:0 #
+V[21:19:17.024]     definition: 1
+V[21:19:17.024]     hover: true
+V[21:19:17.024]     documentHighlight: 0
+V[21:19:17.024]   3:1 include
+V[21:19:17.024]     definition: 1
+V[21:19:17.024]     hover: true
+V[21:19:17.024]     documentHighlight: 0
+V[21:19:17.024]   3:9 <
+V[21:19:17.024]     definition: 1
+V[21:19:17.024]     hover: true
+V[21:19:17.024]     documentHighlight: 0
+V[21:19:17.024]   3:10 sys
+V[21:19:17.024]     definition: 1
+V[21:19:17.024]     hover: true
+V[21:19:17.024]     documentHighlight: 0
+V[21:19:17.024]   3:13 /
+V[21:19:17.024]     definition: 1
+V[21:19:17.024]     hover: true
+V[21:19:17.024]     documentHighlight: 0
+V[21:19:17.024]   3:14 types
+V[21:19:17.024]     definition: 1
+V[21:19:17.024]     hover: true
+V[21:19:17.024]     documentHighlight: 0
+V[21:19:17.024]   3:19 .
+V[21:19:17.024]     definition: 1
+V[21:19:17.024]     hover: true
+V[21:19:17.024]     documentHighlight: 0
+V[21:19:17.024]   3:20 h
+V[21:19:17.024]     definition: 1
+V[21:19:17.024]     hover: true
+V[21:19:17.025]     documentHighlight: 0
+V[21:19:17.025]   3:21 >
+V[21:19:17.025]     definition: 1
+V[21:19:17.025]     hover: true
+V[21:19:17.025]     documentHighlight: 0
+V[21:19:17.025]   4:0 #
+V[21:19:17.025]     definition: 1
+V[21:19:17.025]     hover: true
+V[21:19:17.025]     documentHighlight: 0
+V[21:19:17.025]   4:1 include
+V[21:19:17.025]     definition: 1
+V[21:19:17.025]     hover: true
+V[21:19:17.025]     documentHighlight: 0
+V[21:19:17.025]   4:9 <
+V[21:19:17.025]     definition: 1
+V[21:19:17.025]     hover: true
+V[21:19:17.025]     documentHighlight: 0
+V[21:19:17.025]   4:10 sys
+V[21:19:17.025]     definition: 1
+V[21:19:17.025]     hover: true
+V[21:19:17.025]     documentHighlight: 0
+V[21:19:17.025]   4:13 /
+V[21:19:17.025]     definition: 1
+V[21:19:17.025]     hover: true
+V[21:19:17.025]     documentHighlight: 0
+V[21:19:17.025]   4:14 wait
+V[21:19:17.025]     definition: 1
+V[21:19:17.025]     hover: true
+V[21:19:17.025]     documentHighlight: 0
+V[21:19:17.025]   4:18 .
+V[21:19:17.025]     definition: 1
+V[21:19:17.025]     hover: true
+V[21:19:17.025]     documentHighlight: 0
+V[21:19:17.025]   4:19 h
+V[21:19:17.025]     definition: 1
+V[21:19:17.025]     hover: true
+V[21:19:17.025]     documentHighlight: 0
+V[21:19:17.025]   4:20 >
+V[21:19:17.025]     definition: 1
+V[21:19:17.025]     hover: true
+V[21:19:17.025]     documentHighlight: 0
+V[21:19:17.025]   5:0 #
+V[21:19:17.025]     definition: 1
+V[21:19:17.025]     hover: true
+V[21:19:17.025]     documentHighlight: 0
+V[21:19:17.025]   5:1 include
+V[21:19:17.025]     definition: 1
+V[21:19:17.025]     hover: true
+V[21:19:17.025]     documentHighlight: 0
+V[21:19:17.025]   5:9 <
+V[21:19:17.025]     definition: 1
+V[21:19:17.025]     hover: true
+V[21:19:17.025]     documentHighlight: 0
+V[21:19:17.025]   5:10 unistd
+V[21:19:17.025]     definition: 1
+V[21:19:17.025]     hover: true
+V[21:19:17.025]     documentHighlight: 0
+V[21:19:17.025]   5:16 .
+V[21:19:17.025]     definition: 1
+V[21:19:17.025]     hover: true
+V[21:19:17.025]     documentHighlight: 0
+V[21:19:17.025]   5:17 h
+V[21:19:17.025]     definition: 1
+V[21:19:17.025]     hover: true
+V[21:19:17.025]     documentHighlight: 0
+V[21:19:17.025]   5:18 >
+V[21:19:17.025]     definition: 1
+V[21:19:17.025]     hover: true
+V[21:19:17.025]     documentHighlight: 0
+V[21:19:17.025]   7:0 int
+V[21:19:17.025]     definition: 0
+V[21:19:17.025]     hover: false
+V[21:19:17.025]     documentHighlight: 0
+V[21:19:17.025]   7:4 main
+V[21:19:17.026]     definition: 1
+V[21:19:17.026]     hover: true
+V[21:19:17.026]     documentHighlight: 1
+V[21:19:17.026]   7:8 (
+V[21:19:17.026]     definition: 1
+V[21:19:17.026]     hover: false
+V[21:19:17.026]     documentHighlight: 1
+V[21:19:17.026]   7:9 int
+V[21:19:17.026]     definition: 0
+V[21:19:17.026]     hover: false
+V[21:19:17.026]     documentHighlight: 0
+V[21:19:17.026]   7:13 argc
+V[21:19:17.026]     definition: 1
+V[21:19:17.026]     hover: true
+V[21:19:17.026]     documentHighlight: 5
+V[21:19:17.026]   7:17 ,
+V[21:19:17.026]     definition: 1
+V[21:19:17.026]     hover: false
+V[21:19:17.026]     documentHighlight: 5
+V[21:19:17.026]   7:19 char
+V[21:19:17.026]     definition: 0
+V[21:19:17.026]     hover: false
+V[21:19:17.026]     documentHighlight: 0
+V[21:19:17.026]   7:24 *
+V[21:19:17.026]     definition: 0
+V[21:19:17.026]     hover: false
+V[21:19:17.026]     documentHighlight: 0
+V[21:19:17.026]   7:25 argv
+V[21:19:17.026]     definition: 1
+V[21:19:17.027]     hover: true
+V[21:19:17.027]     documentHighlight: 4
+V[21:19:17.027]   7:29 [
+V[21:19:17.027]     definition: 1
+V[21:19:17.027]     hover: false
+V[21:19:17.027]     documentHighlight: 4
+V[21:19:17.027]   7:30 ]
+V[21:19:17.027]     definition: 0
+V[21:19:17.027]     hover: false
+V[21:19:17.027]     documentHighlight: 0
+V[21:19:17.027]   7:31 )
+V[21:19:17.027]     definition: 0
+V[21:19:17.027]     hover: false
+V[21:19:17.027]     documentHighlight: 0
+V[21:19:17.027]   8:0 {
+V[21:19:17.027]     definition: 0
+V[21:19:17.027]     hover: false
+V[21:19:17.027]     documentHighlight: 0
+V[21:19:17.027]   9:4 if
+V[21:19:17.027]     definition: 0
+V[21:19:17.027]     hover: false
+V[21:19:17.027]     documentHighlight: 0
+V[21:19:17.027]   9:7 (
+V[21:19:17.027]     definition: 0
+V[21:19:17.027]     hover: false
+V[21:19:17.027]     documentHighlight: 0
+V[21:19:17.027]   9:8 argc
+V[21:19:17.027]     definition: 1
+V[21:19:17.027]     hover: true
+V[21:19:17.027]     documentHighlight: 5
+V[21:19:17.027]   9:13 <
+V[21:19:17.027]     tweak: ExtractVariable
+V[21:19:17.027]     definition: 0
+V[21:19:17.027]     hover: false
+V[21:19:17.027]     documentHighlight: 0
+V[21:19:17.027]   9:15 3
+V[21:19:17.027]     tweak: ExtractVariable
+V[21:19:17.027]     definition: 0
+V[21:19:17.027]     hover: false
+V[21:19:17.027]     documentHighlight: 0
+V[21:19:17.027]   9:16 )
+V[21:19:17.027]     definition: 0
+V[21:19:17.027]     hover: false
+V[21:19:17.027]     documentHighlight: 0
+V[21:19:17.027]   9:18 {
+V[21:19:17.027]     definition: 0
+V[21:19:17.027]     hover: false
+V[21:19:17.027]     documentHighlight: 0
+V[21:19:17.027]   10:8 printf
+V[21:19:17.027]     definition: 1
+V[21:19:17.027]     hover: true
+V[21:19:17.027]     documentHighlight: 11
+V[21:19:17.028]   10:14 (
+V[21:19:17.028]     definition: 1
+V[21:19:17.028]     hover: true
+V[21:19:17.028]     documentHighlight: 11
+V[21:19:17.028]   10:15 "Using:./procctl timetvl program argv ...\n"
+V[21:19:17.028]     tweak: ExtractVariable
+V[21:19:17.028]     tweak: RawStringLiteral
+V[21:19:17.028]     definition: 1
+V[21:19:17.028]     hover: true
+V[21:19:17.028]     documentHighlight: 11
+V[21:19:17.028]   10:59 )
+V[21:19:17.028]     definition: 1
+V[21:19:17.028]     hover: true
+V[21:19:17.028]     documentHighlight: 11
+V[21:19:17.028]   10:60 ;
+V[21:19:17.028]     definition: 1
+V[21:19:17.028]     hover: true
+V[21:19:17.028]     documentHighlight: 11
+V[21:19:17.028]   11:8 printf
+V[21:19:17.028]     definition: 1
+V[21:19:17.029]     hover: true
+V[21:19:17.029]     documentHighlight: 11
+V[21:19:17.029]   11:14 (
+V[21:19:17.029]     definition: 1
+V[21:19:17.029]     hover: true
+V[21:19:17.029]     documentHighlight: 11
+V[21:19:17.029]   11:15 "Example:/project/tools/bin/procctl 10 /usr/bin/tar zcvf /tmp/tmp.tgz /usr/include\n"
+V[21:19:17.029]     tweak: ExtractVariable
+V[21:19:17.029]     tweak: RawStringLiteral
+V[21:19:17.029]     definition: 1
+V[21:19:17.029]     hover: true
+V[21:19:17.029]     documentHighlight: 11
+V[21:19:17.029]   11:100 )
+V[21:19:17.029]     definition: 1
+V[21:19:17.029]     hover: true
+V[21:19:17.029]     documentHighlight: 11
+V[21:19:17.029]   11:101 ;
+V[21:19:17.029]     definition: 1
+V[21:19:17.029]     hover: true
+V[21:19:17.029]     documentHighlight: 11
+V[21:19:17.029]   12:8 printf
+V[21:19:17.029]     definition: 1
+V[21:19:17.029]     hover: true
+V[21:19:17.030]     documentHighlight: 11
+V[21:19:17.030]   12:14 (
+V[21:19:17.030]     definition: 1
+V[21:19:17.030]     hover: true
+V[21:19:17.030]     documentHighlight: 11
+V[21:19:17.030]   12:15 "Example:/project/tools/bin/procctl 60 /project/idc/bin/crtsurfdata /project/idc/ini/stcode.ini "
+V[21:19:17.030]     tweak: ExtractVariable
+V[21:19:17.030]     tweak: RawStringLiteral
+V[21:19:17.030]     definition: 1
+V[21:19:17.030]     hover: true
+V[21:19:17.030]     documentHighlight: 11
+V[21:19:17.030]   13:15 "/tmp/idc/surfdata /log/idc/crtsurfdata.log csv,xml,json\n"
+V[21:19:17.030]     tweak: ExtractVariable
+V[21:19:17.030]     tweak: RawStringLiteral
+V[21:19:17.030]     definition: 0
+V[21:19:17.030]     hover: true
+V[21:19:17.030]     documentHighlight: 0
+V[21:19:17.030]   13:74 )
+V[21:19:17.030]     definition: 1
+V[21:19:17.030]     hover: true
+V[21:19:17.030]     documentHighlight: 11
+V[21:19:17.030]   13:75 ;
+V[21:19:17.030]     definition: 1
+V[21:19:17.030]     hover: true
+V[21:19:17.030]     documentHighlight: 11
+V[21:19:17.030]   15:8 printf
+V[21:19:17.030]     definition: 1
+V[21:19:17.031]     hover: true
+V[21:19:17.031]     documentHighlight: 11
+V[21:19:17.031]   15:14 (
+V[21:19:17.031]     definition: 1
+V[21:19:17.031]     hover: true
+V[21:19:17.031]     documentHighlight: 11
+V[21:19:17.031]   15:15 "本程序是服务程序的调度程序，周期性启动服务程序或shell脚本。\n"
+V[21:19:17.031]     tweak: ExtractVariable
+V[21:19:17.031]     definition: 1
+V[21:19:17.031]     hover: true
+V[21:19:17.031]     documentHighlight: 11
+V[21:19:17.031]   15:51 )
+V[21:19:17.031]     definition: 1
+V[21:19:17.031]     hover: true
+V[21:19:17.031]     documentHighlight: 11
+V[21:19:17.031]   15:52 ;
+V[21:19:17.031]     definition: 1
+V[21:19:17.031]     hover: true
+V[21:19:17.031]     documentHighlight: 11
+V[21:19:17.031]   16:8 printf
+V[21:19:17.031]     definition: 1
+V[21:19:17.032]     hover: true
+V[21:19:17.032]     documentHighlight: 11
+V[21:19:17.032]   16:14 (
+V[21:19:17.032]     definition: 1
+V[21:19:17.032]     hover: true
+V[21:19:17.032]     documentHighlight: 11
+V[21:19:17.032]   16:15 "timetvl 运行周期，单位：秒。\n"
+V[21:19:17.032]     tweak: ExtractVariable
+V[21:19:17.032]     definition: 1
+V[21:19:17.032]     hover: true
+V[21:19:17.032]     documentHighlight: 11
+V[21:19:17.032]   16:37 )
+V[21:19:17.032]     definition: 1
+V[21:19:17.032]     hover: true
+V[21:19:17.032]     documentHighlight: 11
+V[21:19:17.032]   16:38 ;
+V[21:19:17.032]     definition: 1
+V[21:19:17.033]     hover: true
+V[21:19:17.033]     documentHighlight: 11
+V[21:19:17.033]   17:8 printf
+V[21:19:17.033]     definition: 1
+V[21:19:17.033]     hover: true
+V[21:19:17.033]     documentHighlight: 11
+V[21:19:17.033]   17:14 (
+V[21:19:17.033]     definition: 1
+V[21:19:17.033]     hover: true
+V[21:19:17.033]     documentHighlight: 11
+V[21:19:17.033]   17:15 "        被调度的程序运行结束后，在timetvl秒后会被procctl重新启动。\n"
+V[21:19:17.033]     tweak: ExtractVariable
+V[21:19:17.033]     definition: 1
+V[21:19:17.033]     hover: true
+V[21:19:17.033]     documentHighlight: 11
+V[21:19:17.033]   17:63 )
+V[21:19:17.033]     definition: 1
+V[21:19:17.033]     hover: true
+V[21:19:17.034]     documentHighlight: 11
+V[21:19:17.034]   17:64 ;
+V[21:19:17.034]     definition: 1
+V[21:19:17.034]     hover: true
+V[21:19:17.034]     documentHighlight: 11
+V[21:19:17.034]   18:8 printf
+V[21:19:17.034]     definition: 1
+V[21:19:17.034]     hover: true
+V[21:19:17.034]     documentHighlight: 11
+V[21:19:17.034]   18:14 (
+V[21:19:17.034]     definition: 1
+V[21:19:17.034]     hover: true
+V[21:19:17.034]     documentHighlight: 11
+V[21:19:17.034]   18:15 "        如果被调度的程序是周期性的任务，timetvl设置为运行周期。\n"
+V[21:19:17.034]     tweak: ExtractVariable
+V[21:19:17.034]     definition: 1
+V[21:19:17.034]     hover: true
+V[21:19:17.034]     documentHighlight: 11
+V[21:19:17.034]   18:58 )
+V[21:19:17.034]     definition: 1
+V[21:19:17.035]     hover: true
+V[21:19:17.035]     documentHighlight: 11
+V[21:19:17.035]   18:59 ;
+V[21:19:17.035]     definition: 1
+V[21:19:17.035]     hover: true
+V[21:19:17.035]     documentHighlight: 11
+V[21:19:17.035]   19:8 printf
+V[21:19:17.035]     definition: 1
+V[21:19:17.035]     hover: true
+V[21:19:17.035]     documentHighlight: 11
+V[21:19:17.035]   19:14 (
+V[21:19:17.035]     definition: 1
+V[21:19:17.035]     hover: true
+V[21:19:17.035]     documentHighlight: 11
+V[21:19:17.035]   19:15 "        如果被调度的程序是常驻内存的服务程序，timetvl设置小于5秒。\n"
+V[21:19:17.035]     tweak: ExtractVariable
+V[21:19:17.035]     definition: 1
+V[21:19:17.035]     hover: true
+V[21:19:17.035]     documentHighlight: 11
+V[21:19:17.035]   19:60 )
+V[21:19:17.035]     definition: 1
+V[21:19:17.036]     hover: true
+V[21:19:17.036]     documentHighlight: 11
+V[21:19:17.036]   19:61 ;
+V[21:19:17.036]     definition: 1
+V[21:19:17.036]     hover: true
+V[21:19:17.036]     documentHighlight: 11
+V[21:19:17.036]   20:8 printf
+V[21:19:17.036]     definition: 1
+V[21:19:17.036]     hover: true
+V[21:19:17.036]     documentHighlight: 11
+V[21:19:17.036]   20:14 (
+V[21:19:17.036]     definition: 1
+V[21:19:17.036]     hover: true
+V[21:19:17.036]     documentHighlight: 11
+V[21:19:17.036]   20:15 "program 被调度的程序名，必须使用全路径。\n"
+V[21:19:17.036]     tweak: ExtractVariable
+V[21:19:17.036]     definition: 1
+V[21:19:17.036]     hover: true
+V[21:19:17.036]     documentHighlight: 11
+V[21:19:17.036]   20:43 )
+V[21:19:17.036]     definition: 1
+V[21:19:17.036]     hover: true
+V[21:19:17.037]     documentHighlight: 11
+V[21:19:17.037]   20:44 ;
+V[21:19:17.037]     definition: 1
+V[21:19:17.037]     hover: true
+V[21:19:17.037]     documentHighlight: 11
+V[21:19:17.037]   21:8 printf
+V[21:19:17.037]     definition: 1
+V[21:19:17.037]     hover: true
+V[21:19:17.037]     documentHighlight: 11
+V[21:19:17.037]   21:14 (
+V[21:19:17.037]     definition: 1
+V[21:19:17.037]     hover: true
+V[21:19:17.037]     documentHighlight: 11
+V[21:19:17.037]   21:15 "...     被调度的程序的参数。\n"
+V[21:19:17.037]     tweak: ExtractVariable
+V[21:19:17.037]     definition: 1
+V[21:19:17.037]     hover: true
+V[21:19:17.037]     documentHighlight: 11
+V[21:19:17.037]   21:37 )
+V[21:19:17.037]     definition: 1
+V[21:19:17.037]     hover: true
+V[21:19:17.037]     documentHighlight: 11
+V[21:19:17.038]   21:38 ;
+V[21:19:17.038]     definition: 1
+V[21:19:17.038]     hover: true
+V[21:19:17.038]     documentHighlight: 11
+V[21:19:17.038]   22:8 printf
+V[21:19:17.038]     definition: 1
+V[21:19:17.038]     hover: true
+V[21:19:17.038]     documentHighlight: 11
+V[21:19:17.038]   22:14 (
+V[21:19:17.038]     definition: 1
+V[21:19:17.038]     hover: true
+V[21:19:17.038]     documentHighlight: 11
+V[21:19:17.038]   22:15 "注意，本程序不会被kill杀死，但可以用kill -9强行杀死。\n\n\n"
+V[21:19:17.038]     tweak: ExtractVariable
+V[21:19:17.038]     definition: 1
+V[21:19:17.038]     hover: true
+V[21:19:17.038]     documentHighlight: 11
+V[21:19:17.038]   22:55 )
+V[21:19:17.038]     definition: 1
+V[21:19:17.038]     hover: true
+V[21:19:17.038]     documentHighlight: 11
+V[21:19:17.038]   22:56 ;
+V[21:19:17.039]     definition: 1
+V[21:19:17.039]     hover: true
+V[21:19:17.039]     documentHighlight: 11
+V[21:19:17.039]   23:8 return
+V[21:19:17.039]     definition: 0
+V[21:19:17.039]     hover: false
+V[21:19:17.039]     documentHighlight: 1
+V[21:19:17.039]   23:15 -
+V[21:19:17.039]     tweak: ExtractVariable
+V[21:19:17.039]     definition: 0
+V[21:19:17.039]     hover: true
+V[21:19:17.039]     documentHighlight: 0
+V[21:19:17.039]   23:16 1
+V[21:19:17.039]     tweak: ExtractVariable
+V[21:19:17.039]     definition: 0
+V[21:19:17.039]     hover: false
+V[21:19:17.039]     documentHighlight: 0
+V[21:19:17.039]   23:17 ;
+V[21:19:17.039]     definition: 0
+V[21:19:17.039]     hover: false
+V[21:19:17.039]     documentHighlight: 0
+V[21:19:17.039]   24:4 }
+V[21:19:17.039]     definition: 0
+V[21:19:17.039]     hover: false
+V[21:19:17.039]     documentHighlight: 0
+V[21:19:17.039]   30:4 for
+V[21:19:17.039]     definition: 0
+V[21:19:17.039]     hover: false
+V[21:19:17.039]     documentHighlight: 1
+V[21:19:17.039]   30:8 (
+V[21:19:17.039]     definition: 0
+V[21:19:17.039]     hover: false
+V[21:19:17.039]     documentHighlight: 1
+V[21:19:17.039]   30:9 int
+V[21:19:17.039]     definition: 0
+V[21:19:17.039]     hover: false
+V[21:19:17.039]     documentHighlight: 1
+V[21:19:17.039]   30:13 ii
+V[21:19:17.039]     definition: 1
+V[21:19:17.039]     hover: true
+V[21:19:17.039]     documentHighlight: 5
+V[21:19:17.039]   30:16 =
+V[21:19:17.039]     definition: 1
+V[21:19:17.039]     hover: true
+V[21:19:17.039]     documentHighlight: 5
+V[21:19:17.039]   30:18 0
+V[21:19:17.039]     tweak: ExtractVariable
+V[21:19:17.039]     definition: 0
+V[21:19:17.039]     hover: false
+V[21:19:17.039]     documentHighlight: 0
+V[21:19:17.040]   30:19 ;
+V[21:19:17.040]     definition: 0
+V[21:19:17.040]     hover: false
+V[21:19:17.040]     documentHighlight: 0
+V[21:19:17.040]   30:21 ii
+V[21:19:17.040]     definition: 1
+V[21:19:17.040]     hover: true
+V[21:19:17.040]     documentHighlight: 5
+V[21:19:17.040]   30:24 <
+V[21:19:17.040]     definition: 0
+V[21:19:17.040]     hover: false
+V[21:19:17.040]     documentHighlight: 0
+V[21:19:17.040]   30:26 64
+V[21:19:17.040]     tweak: ExtractVariable
+V[21:19:17.040]     definition: 0
+V[21:19:17.040]     hover: false
+V[21:19:17.040]     documentHighlight: 0
+V[21:19:17.040]   30:28 ;
+V[21:19:17.040]     definition: 0
+V[21:19:17.040]     hover: false
+V[21:19:17.040]     documentHighlight: 0
+V[21:19:17.040]   30:30 ii
+V[21:19:17.040]     definition: 1
+V[21:19:17.040]     hover: true
+V[21:19:17.040]     documentHighlight: 5
+V[21:19:17.040]   30:32 ++
+V[21:19:17.040]     definition: 1
+V[21:19:17.040]     hover: false
+V[21:19:17.040]     documentHighlight: 5
+V[21:19:17.040]   30:34 )
+V[21:19:17.040]     definition: 0
+V[21:19:17.040]     hover: false
+V[21:19:17.040]     documentHighlight: 1
+V[21:19:17.040]   30:36 {
+V[21:19:17.040]     definition: 0
+V[21:19:17.040]     hover: false
+V[21:19:17.040]     documentHighlight: 0
+V[21:19:17.040]   31:8 signal
+V[21:19:17.040]     definition: 1
+V[21:19:17.040]     hover: true
+V[21:19:17.040]     documentHighlight: 2
+V[21:19:17.040]   31:14 (
+V[21:19:17.040]     definition: 1
+V[21:19:17.041]     hover: true
+V[21:19:17.041]     documentHighlight: 2
+V[21:19:17.041]   31:15 ii
+V[21:19:17.041]     definition: 1
+V[21:19:17.041]     hover: true
+V[21:19:17.041]     documentHighlight: 5
+V[21:19:17.041]   31:17 ,
+V[21:19:17.041]     definition: 1
+V[21:19:17.041]     hover: true
+V[21:19:17.041]     documentHighlight: 2
+V[21:19:17.041]   31:19 SIG_IGN
+V[21:19:17.041]     tweak: ExpandMacro
+V[21:19:17.041]     tweak: ExtractVariable
+V[21:19:17.041]     definition: 1
+V[21:19:17.042]     hover: true
+V[21:19:17.042]     documentHighlight: 0
+V[21:19:17.042]   31:26 )
+V[21:19:17.042]     tweak: ExpandMacro
+V[21:19:17.042]     definition: 1
+V[21:19:17.042]     hover: true
+V[21:19:17.042]     documentHighlight: 2
+V[21:19:17.042]   31:27 ;
+V[21:19:17.042]     definition: 1
+V[21:19:17.042]     hover: true
+V[21:19:17.042]     documentHighlight: 2
+V[21:19:17.042]   32:8 close
+V[21:19:17.043]     definition: 1
+V[21:19:17.043]     hover: true
+V[21:19:17.043]     documentHighlight: 1
+V[21:19:17.043]   32:13 (
+V[21:19:17.043]     definition: 1
+V[21:19:17.043]     hover: true
+V[21:19:17.043]     documentHighlight: 1
+V[21:19:17.043]   32:14 ii
+V[21:19:17.043]     definition: 1
+V[21:19:17.043]     hover: true
+V[21:19:17.043]     documentHighlight: 5
+V[21:19:17.043]   32:16 )
+V[21:19:17.043]     definition: 1
+V[21:19:17.043]     hover: true
+V[21:19:17.043]     documentHighlight: 1
+V[21:19:17.043]   32:17 ;
+V[21:19:17.044]     definition: 1
+V[21:19:17.044]     hover: true
+V[21:19:17.044]     documentHighlight: 1
+V[21:19:17.044]   33:4 }
+V[21:19:17.044]     definition: 0
+V[21:19:17.044]     hover: false
+V[21:19:17.044]     documentHighlight: 0
+V[21:19:17.044]   36:4 if
+V[21:19:17.044]     definition: 0
+V[21:19:17.044]     hover: false
+V[21:19:17.044]     documentHighlight: 0
+V[21:19:17.044]   36:7 (
+V[21:19:17.044]     definition: 0
+V[21:19:17.044]     hover: false
+V[21:19:17.044]     documentHighlight: 0
+V[21:19:17.044]   36:8 fork
+V[21:19:17.044]     tweak: ExtractVariable
+V[21:19:17.044]     definition: 1
+V[21:19:17.044]     hover: true
+V[21:19:17.044]     documentHighlight: 2
+V[21:19:17.044]   36:12 (
+V[21:19:17.044]     tweak: ExtractVariable
+V[21:19:17.044]     definition: 1
+V[21:19:17.044]     hover: true
+V[21:19:17.044]     documentHighlight: 2
+V[21:19:17.044]   36:13 )
+V[21:19:17.044]     tweak: ExtractVariable
+V[21:19:17.044]     definition: 1
+V[21:19:17.044]     hover: true
+V[21:19:17.044]     documentHighlight: 2
+V[21:19:17.044]   36:15 !=
+V[21:19:17.044]     tweak: ExtractVariable
+V[21:19:17.045]     definition: 0
+V[21:19:17.045]     hover: false
+V[21:19:17.045]     documentHighlight: 0
+V[21:19:17.045]   36:18 0
+V[21:19:17.045]     tweak: ExtractVariable
+V[21:19:17.045]     definition: 0
+V[21:19:17.045]     hover: false
+V[21:19:17.045]     documentHighlight: 0
+V[21:19:17.045]   36:19 )
+V[21:19:17.045]     definition: 0
+V[21:19:17.045]     hover: false
+V[21:19:17.045]     documentHighlight: 0
+V[21:19:17.045]   36:21 {
+V[21:19:17.045]     definition: 0
+V[21:19:17.045]     hover: false
+V[21:19:17.045]     documentHighlight: 0
+V[21:19:17.045]   37:8 exit
+V[21:19:17.045]     definition: 2
+V[21:19:17.045]     hover: true
+V[21:19:17.045]     documentHighlight: 2
+V[21:19:17.045]   37:12 (
+V[21:19:17.045]     definition: 1
+V[21:19:17.045]     hover: true
+V[21:19:17.045]     documentHighlight: 2
+V[21:19:17.045]   37:13 0
+V[21:19:17.045]     tweak: ExtractVariable
+V[21:19:17.045]     definition: 1
+V[21:19:17.045]     hover: true
+V[21:19:17.045]     documentHighlight: 2
+V[21:19:17.045]   37:14 )
+V[21:19:17.045]     definition: 1
+V[21:19:17.045]     hover: true
+V[21:19:17.045]     documentHighlight: 2
+V[21:19:17.045]   37:15 ;
+V[21:19:17.045]     definition: 1
+V[21:19:17.046]     hover: true
+V[21:19:17.046]     documentHighlight: 2
+V[21:19:17.046]   38:4 }
+V[21:19:17.046]     definition: 0
+V[21:19:17.046]     hover: false
+V[21:19:17.046]     documentHighlight: 0
+V[21:19:17.046]   41:4 signal
+V[21:19:17.046]     definition: 1
+V[21:19:17.046]     hover: true
+V[21:19:17.046]     documentHighlight: 2
+V[21:19:17.046]   41:10 (
+V[21:19:17.046]     definition: 1
+V[21:19:17.046]     hover: true
+V[21:19:17.046]     documentHighlight: 2
+V[21:19:17.046]   41:11 SIGCHLD
+V[21:19:17.046]     tweak: ExpandMacro
+V[21:19:17.046]     tweak: ExtractVariable
+V[21:19:17.046]     definition: 1
+V[21:19:17.047]     hover: true
+V[21:19:17.047]     documentHighlight: 2
+V[21:19:17.047]   41:18 ,
+V[21:19:17.047]     tweak: ExpandMacro
+V[21:19:17.047]     definition: 1
+V[21:19:17.047]     hover: true
+V[21:19:17.047]     documentHighlight: 2
+V[21:19:17.047]   41:20 SIG_DFL
+V[21:19:17.047]     tweak: ExpandMacro
+V[21:19:17.047]     tweak: ExtractVariable
+V[21:19:17.047]     definition: 1
+V[21:19:17.047]     hover: true
+V[21:19:17.047]     documentHighlight: 0
+V[21:19:17.047]   41:27 )
+V[21:19:17.048]     tweak: ExpandMacro
+V[21:19:17.048]     definition: 1
+V[21:19:17.048]     hover: true
+V[21:19:17.048]     documentHighlight: 2
+V[21:19:17.048]   41:28 ;
+V[21:19:17.048]     definition: 1
+V[21:19:17.048]     hover: true
+V[21:19:17.048]     documentHighlight: 2
+V[21:19:17.048]   44:4 char
+V[21:19:17.048]     definition: 0
+V[21:19:17.048]     hover: false
+V[21:19:17.048]     documentHighlight: 0
+V[21:19:17.048]   44:9 *
+V[21:19:17.048]     definition: 0
+V[21:19:17.048]     hover: false
+V[21:19:17.048]     documentHighlight: 0
+V[21:19:17.048]   44:10 pargv
+V[21:19:17.048]     definition: 1
+V[21:19:17.048]     hover: true
+V[21:19:17.048]     documentHighlight: 4
+V[21:19:17.048]   44:15 [
+V[21:19:17.048]     definition: 1
+V[21:19:17.048]     hover: false
+V[21:19:17.048]     documentHighlight: 4
+V[21:19:17.048]   44:16 argc
+V[21:19:17.048]     definition: 1
+V[21:19:17.049]     hover: true
+V[21:19:17.049]     documentHighlight: 5
+V[21:19:17.049]   44:20 ]
+V[21:19:17.049]     definition: 1
+V[21:19:17.049]     hover: false
+V[21:19:17.049]     documentHighlight: 5
+V[21:19:17.049]   44:21 ;
+V[21:19:17.049]     definition: 0
+V[21:19:17.049]     hover: false
+V[21:19:17.049]     documentHighlight: 0
+V[21:19:17.049]   45:4 for
+V[21:19:17.049]     definition: 0
+V[21:19:17.049]     hover: false
+V[21:19:17.049]     documentHighlight: 1
+V[21:19:17.049]   45:8 (
+V[21:19:17.049]     definition: 0
+V[21:19:17.049]     hover: false
+V[21:19:17.049]     documentHighlight: 1
+V[21:19:17.049]   45:9 int
+V[21:19:17.049]     definition: 0
+V[21:19:17.049]     hover: false
+V[21:19:17.049]     documentHighlight: 1
+V[21:19:17.049]   45:13 ii
+V[21:19:17.049]     definition: 1
+V[21:19:17.049]     hover: true
+V[21:19:17.049]     documentHighlight: 5
+V[21:19:17.049]   45:16 =
+V[21:19:17.049]     definition: 1
+V[21:19:17.049]     hover: true
+V[21:19:17.049]     documentHighlight: 5
+V[21:19:17.049]   45:18 2
+V[21:19:17.049]     tweak: ExtractVariable
+V[21:19:17.049]     definition: 0
+V[21:19:17.049]     hover: false
+V[21:19:17.049]     documentHighlight: 0
+V[21:19:17.049]   45:19 ;
+V[21:19:17.049]     definition: 0
+V[21:19:17.049]     hover: false
+V[21:19:17.049]     documentHighlight: 0
+V[21:19:17.049]   45:21 ii
+V[21:19:17.049]     definition: 1
+V[21:19:17.049]     hover: true
+V[21:19:17.050]     documentHighlight: 5
+V[21:19:17.050]   45:24 <
+V[21:19:17.050]     definition: 0
+V[21:19:17.050]     hover: false
+V[21:19:17.050]     documentHighlight: 0
+V[21:19:17.050]   45:26 argc
+V[21:19:17.050]     definition: 1
+V[21:19:17.050]     hover: true
+V[21:19:17.050]     documentHighlight: 5
+V[21:19:17.050]   45:30 ;
+V[21:19:17.050]     definition: 1
+V[21:19:17.050]     hover: true
+V[21:19:17.050]     documentHighlight: 5
+V[21:19:17.050]   45:32 ii
+V[21:19:17.050]     definition: 1
+V[21:19:17.050]     hover: true
+V[21:19:17.050]     documentHighlight: 5
+V[21:19:17.050]   45:34 ++
+V[21:19:17.050]     definition: 1
+V[21:19:17.050]     hover: false
+V[21:19:17.050]     documentHighlight: 5
+V[21:19:17.050]   45:36 )
+V[21:19:17.050]     definition: 0
+V[21:19:17.050]     hover: false
+V[21:19:17.050]     documentHighlight: 1
+V[21:19:17.050]   45:38 {
+V[21:19:17.050]     definition: 0
+V[21:19:17.050]     hover: false
+V[21:19:17.050]     documentHighlight: 0
+V[21:19:17.050]   46:8 pargv
+V[21:19:17.050]     definition: 1
+V[21:19:17.050]     hover: true
+V[21:19:17.051]     documentHighlight: 4
+V[21:19:17.051]   46:13 [
+V[21:19:17.051]     tweak: ExtractVariable
+V[21:19:17.051]     definition: 1
+V[21:19:17.051]     hover: false
+V[21:19:17.051]     documentHighlight: 4
+V[21:19:17.051]   46:14 ii
+V[21:19:17.051]     definition: 1
+V[21:19:17.051]     hover: true
+V[21:19:17.051]     documentHighlight: 5
+V[21:19:17.051]   46:17 -
+V[21:19:17.051]     tweak: ExtractVariable
+V[21:19:17.051]     definition: 0
+V[21:19:17.051]     hover: false
+V[21:19:17.051]     documentHighlight: 0
+V[21:19:17.051]   46:19 2
+V[21:19:17.051]     tweak: ExtractVariable
+V[21:19:17.051]     definition: 0
+V[21:19:17.051]     hover: false
+V[21:19:17.051]     documentHighlight: 0
+V[21:19:17.051]   46:20 ]
+V[21:19:17.051]     tweak: ExtractVariable
+V[21:19:17.051]     definition: 0
+V[21:19:17.051]     hover: false
+V[21:19:17.051]     documentHighlight: 0
+V[21:19:17.051]   46:22 =
+V[21:19:17.051]     definition: 0
+V[21:19:17.051]     hover: false
+V[21:19:17.051]     documentHighlight: 0
+V[21:19:17.051]   46:24 argv
+V[21:19:17.051]     definition: 1
+V[21:19:17.051]     hover: true
+V[21:19:17.051]     documentHighlight: 4
+V[21:19:17.051]   46:28 [
+V[21:19:17.051]     definition: 1
+V[21:19:17.051]     hover: false
+V[21:19:17.051]     documentHighlight: 4
+V[21:19:17.051]   46:29 ii
+V[21:19:17.051]     definition: 1
+V[21:19:17.051]     hover: true
+V[21:19:17.052]     documentHighlight: 5
+V[21:19:17.052]   46:31 ]
+V[21:19:17.052]     definition: 1
+V[21:19:17.052]     hover: false
+V[21:19:17.052]     documentHighlight: 5
+V[21:19:17.052]   46:32 ;
+V[21:19:17.052]     definition: 0
+V[21:19:17.052]     hover: false
+V[21:19:17.052]     documentHighlight: 0
+V[21:19:17.052]   47:4 }
+V[21:19:17.052]     definition: 0
+V[21:19:17.052]     hover: false
+V[21:19:17.052]     documentHighlight: 0
+V[21:19:17.052]   49:4 pargv
+V[21:19:17.052]     definition: 1
+V[21:19:17.052]     hover: true
+V[21:19:17.052]     documentHighlight: 4
+V[21:19:17.052]   49:9 [
+V[21:19:17.052]     tweak: ExtractVariable
+V[21:19:17.052]     definition: 1
+V[21:19:17.052]     hover: false
+V[21:19:17.052]     documentHighlight: 4
+V[21:19:17.052]   49:10 argc
+V[21:19:17.052]     definition: 1
+V[21:19:17.052]     hover: true
+V[21:19:17.052]     documentHighlight: 5
+V[21:19:17.052]   49:15 -
+V[21:19:17.052]     tweak: ExtractVariable
+V[21:19:17.052]     definition: 0
+V[21:19:17.052]     hover: false
+V[21:19:17.052]     documentHighlight: 0
+V[21:19:17.052]   49:17 2
+V[21:19:17.052]     tweak: ExtractVariable
+V[21:19:17.052]     definition: 0
+V[21:19:17.052]     hover: false
+V[21:19:17.052]     documentHighlight: 0
+V[21:19:17.052]   49:18 ]
+V[21:19:17.052]     tweak: ExtractVariable
+V[21:19:17.052]     definition: 0
+V[21:19:17.052]     hover: false
+V[21:19:17.052]     documentHighlight: 0
+V[21:19:17.052]   49:20 =
+V[21:19:17.052]     definition: 0
+V[21:19:17.052]     hover: false
+V[21:19:17.052]     documentHighlight: 0
+V[21:19:17.052]   49:22 nullptr
+V[21:19:17.052]     definition: 0
+V[21:19:17.052]     hover: false
+V[21:19:17.052]     documentHighlight: 0
+V[21:19:17.052]   49:29 ;
+V[21:19:17.052]     definition: 0
+V[21:19:17.052]     hover: false
+V[21:19:17.052]     documentHighlight: 0
+V[21:19:17.052]   51:4 while
+V[21:19:17.052]     definition: 0
+V[21:19:17.052]     hover: false
+V[21:19:17.052]     documentHighlight: 1
+V[21:19:17.052]   51:10 (
+V[21:19:17.052]     definition: 0
+V[21:19:17.052]     hover: false
+V[21:19:17.052]     documentHighlight: 1
+V[21:19:17.052]   51:11 true
+V[21:19:17.052]     tweak: ExtractVariable
+V[21:19:17.052]     definition: 0
+V[21:19:17.052]     hover: false
+V[21:19:17.052]     documentHighlight: 1
+V[21:19:17.052]   51:15 )
+V[21:19:17.052]     definition: 0
+V[21:19:17.052]     hover: false
+V[21:19:17.052]     documentHighlight: 1
+V[21:19:17.052]   51:17 {
+V[21:19:17.052]     definition: 0
+V[21:19:17.052]     hover: false
+V[21:19:17.052]     documentHighlight: 0
+V[21:19:17.052]   52:8 if
+V[21:19:17.052]     definition: 0
+V[21:19:17.052]     hover: false
+V[21:19:17.053]     documentHighlight: 0
+V[21:19:17.053]   52:11 (
+V[21:19:17.053]     definition: 0
+V[21:19:17.053]     hover: false
+V[21:19:17.053]     documentHighlight: 0
+V[21:19:17.053]   52:12 fork
+V[21:19:17.053]     tweak: ExtractVariable
+V[21:19:17.053]     definition: 1
+V[21:19:17.053]     hover: true
+V[21:19:17.053]     documentHighlight: 2
+V[21:19:17.053]   52:16 (
+V[21:19:17.053]     tweak: ExtractVariable
+V[21:19:17.053]     definition: 1
+V[21:19:17.053]     hover: true
+V[21:19:17.053]     documentHighlight: 2
+V[21:19:17.053]   52:17 )
+V[21:19:17.053]     tweak: ExtractVariable
+V[21:19:17.053]     definition: 1
+V[21:19:17.053]     hover: true
+V[21:19:17.053]     documentHighlight: 2
+V[21:19:17.053]   52:19 ==
+V[21:19:17.053]     tweak: ExtractVariable
+V[21:19:17.053]     definition: 0
+V[21:19:17.053]     hover: false
+V[21:19:17.053]     documentHighlight: 0
+V[21:19:17.053]   52:22 0
+V[21:19:17.053]     tweak: ExtractVariable
+V[21:19:17.053]     definition: 0
+V[21:19:17.053]     hover: false
+V[21:19:17.053]     documentHighlight: 0
+V[21:19:17.053]   52:23 )
+V[21:19:17.053]     definition: 0
+V[21:19:17.053]     hover: false
+V[21:19:17.053]     documentHighlight: 0
+V[21:19:17.053]   52:25 {
+V[21:19:17.053]     definition: 0
+V[21:19:17.053]     hover: false
+V[21:19:17.053]     documentHighlight: 0
+V[21:19:17.053]   54:12 execv
+V[21:19:17.053]     definition: 1
+V[21:19:17.054]     hover: true
+V[21:19:17.054]     documentHighlight: 1
+V[21:19:17.054]   54:17 (
+V[21:19:17.054]     definition: 1
+V[21:19:17.054]     hover: true
+V[21:19:17.054]     documentHighlight: 1
+V[21:19:17.054]   54:18 argv
+V[21:19:17.054]     definition: 1
+V[21:19:17.054]     hover: true
+V[21:19:17.054]     documentHighlight: 4
+V[21:19:17.054]   54:22 [
+V[21:19:17.054]     tweak: ExtractVariable
+V[21:19:17.054]     definition: 1
+V[21:19:17.054]     hover: false
+V[21:19:17.054]     documentHighlight: 4
+V[21:19:17.054]   54:23 2
+V[21:19:17.054]     tweak: ExtractVariable
+V[21:19:17.054]     definition: 0
+V[21:19:17.054]     hover: false
+V[21:19:17.054]     documentHighlight: 0
+V[21:19:17.054]   54:24 ]
+V[21:19:17.054]     tweak: ExtractVariable
+V[21:19:17.054]     definition: 0
+V[21:19:17.054]     hover: false
+V[21:19:17.054]     documentHighlight: 0
+V[21:19:17.054]   54:25 ,
+V[21:19:17.054]     definition: 1
+V[21:19:17.055]     hover: true
+V[21:19:17.055]     documentHighlight: 1
+V[21:19:17.055]   54:27 pargv
+V[21:19:17.055]     definition: 1
+V[21:19:17.055]     hover: true
+V[21:19:17.055]     documentHighlight: 4
+V[21:19:17.055]   54:32 )
+V[21:19:17.055]     definition: 1
+V[21:19:17.055]     hover: true
+V[21:19:17.055]     documentHighlight: 1
+V[21:19:17.055]   54:33 ;
+V[21:19:17.055]     definition: 1
+V[21:19:17.055]     hover: true
+V[21:19:17.055]     documentHighlight: 1
+V[21:19:17.055]   55:12 exit
+V[21:19:17.055]     definition: 2
+V[21:19:17.056]     hover: true
+V[21:19:17.056]     documentHighlight: 2
+V[21:19:17.056]   55:16 (
+V[21:19:17.056]     definition: 1
+V[21:19:17.056]     hover: true
+V[21:19:17.056]     documentHighlight: 2
+V[21:19:17.056]   55:17 0
+V[21:19:17.056]     tweak: ExtractVariable
+V[21:19:17.056]     definition: 1
+V[21:19:17.056]     hover: true
+V[21:19:17.056]     documentHighlight: 2
+V[21:19:17.056]   55:18 )
+V[21:19:17.056]     definition: 1
+V[21:19:17.056]     hover: true
+V[21:19:17.056]     documentHighlight: 2
+V[21:19:17.056]   55:19 ;
+V[21:19:17.056]     definition: 1
+V[21:19:17.057]     hover: true
+V[21:19:17.057]     documentHighlight: 2
+V[21:19:17.057]   56:8 }
+V[21:19:17.057]     definition: 0
+V[21:19:17.057]     hover: false
+V[21:19:17.057]     documentHighlight: 0
+V[21:19:17.057]   56:10 else
+V[21:19:17.057]     definition: 0
+V[21:19:17.057]     hover: false
+V[21:19:17.057]     documentHighlight: 0
+V[21:19:17.057]   56:15 {
+V[21:19:17.057]     definition: 0
+V[21:19:17.057]     hover: false
+V[21:19:17.057]     documentHighlight: 0
+V[21:19:17.057]   60:12 wait
+V[21:19:17.057]     definition: 1
+V[21:19:17.057]     hover: true
+V[21:19:17.057]     documentHighlight: 1
+V[21:19:17.057]   60:16 (
+V[21:19:17.057]     definition: 1
+V[21:19:17.057]     hover: true
+V[21:19:17.057]     documentHighlight: 1
+V[21:19:17.057]   60:17 nullptr
+V[21:19:17.057]     tweak: ExtractVariable
+V[21:19:17.057]     definition: 1
+V[21:19:17.057]     hover: true
+V[21:19:17.057]     documentHighlight: 1
+V[21:19:17.057]   60:24 )
+V[21:19:17.057]     definition: 1
+V[21:19:17.058]     hover: true
+V[21:19:17.058]     documentHighlight: 1
+V[21:19:17.058]   60:25 ;
+V[21:19:17.058]     definition: 1
+V[21:19:17.058]     hover: true
+V[21:19:17.058]     documentHighlight: 1
+V[21:19:17.058]   61:12 sleep
+V[21:19:17.058]     definition: 1
+V[21:19:17.058]     hover: true
+V[21:19:17.058]     documentHighlight: 1
+V[21:19:17.058]   61:17 (
+V[21:19:17.058]     definition: 1
+V[21:19:17.058]     hover: true
+V[21:19:17.058]     documentHighlight: 1
+V[21:19:17.058]   61:18 atoi
+V[21:19:17.058]     tweak: ExtractVariable
+V[21:19:17.058]     definition: 2
+V[21:19:17.059]     hover: true
+V[21:19:17.059]     documentHighlight: 1
+V[21:19:17.059]   61:22 (
+V[21:19:17.059]     tweak: ExtractVariable
+V[21:19:17.059]     definition: 1
+V[21:19:17.059]     hover: true
+V[21:19:17.059]     documentHighlight: 1
+V[21:19:17.059]   61:23 argv
+V[21:19:17.059]     definition: 1
+V[21:19:17.059]     hover: true
+V[21:19:17.059]     documentHighlight: 4
+V[21:19:17.059]   61:27 [
+V[21:19:17.059]     tweak: ExtractVariable
+V[21:19:17.059]     definition: 1
+V[21:19:17.059]     hover: false
+V[21:19:17.059]     documentHighlight: 4
+V[21:19:17.059]   61:28 1
+V[21:19:17.059]     tweak: ExtractVariable
+V[21:19:17.059]     definition: 0
+V[21:19:17.059]     hover: false
+V[21:19:17.059]     documentHighlight: 0
+V[21:19:17.059]   61:29 ]
+V[21:19:17.059]     tweak: ExtractVariable
+V[21:19:17.059]     definition: 0
+V[21:19:17.059]     hover: false
+V[21:19:17.059]     documentHighlight: 0
+V[21:19:17.059]   61:30 )
+V[21:19:17.059]     tweak: ExtractVariable
+V[21:19:17.059]     definition: 1
+V[21:19:17.060]     hover: true
+V[21:19:17.060]     documentHighlight: 1
+V[21:19:17.060]   61:31 )
+V[21:19:17.060]     definition: 1
+V[21:19:17.060]     hover: true
+V[21:19:17.060]     documentHighlight: 1
+V[21:19:17.060]   61:32 ;
+V[21:19:17.060]     definition: 1
+V[21:19:17.060]     hover: true
+V[21:19:17.060]     documentHighlight: 1
+V[21:19:17.060]   62:8 }
+V[21:19:17.060]     definition: 0
+V[21:19:17.060]     hover: false
+V[21:19:17.060]     documentHighlight: 0
+V[21:19:17.060]   63:4 }
+V[21:19:17.060]     definition: 0
+V[21:19:17.060]     hover: false
+V[21:19:17.060]     documentHighlight: 0
+V[21:19:17.060]   64:0 }
+V[21:19:17.060]     definition: 0
+V[21:19:17.060]     hover: false
+V[21:19:17.060]     documentHighlight: 0
+I[21:19:17.060] All checks completed, 0 errors

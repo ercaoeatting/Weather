@@ -1,0 +1,30 @@
+[
+    {
+        "directory": "/home/han/CPP/Weather/tools/mytest",
+        "arguments": [
+            "g++",
+            "-g",
+            "-Wall",
+            "-std=c++20",
+            "-o",
+            "procctl",
+            "procctl.cpp"
+        ],
+        "file": "procctl.cpp"
+    },
+    {
+        "directory": "/home/han/CPP/Weather/tools/mytest",
+        "arguments": [
+            "g++",
+            "-g",
+            "-Wall",
+            "-std=c++20",
+            "-I/home/han/CPP/Weather/public/",
+            "-o",
+            "server1",
+            "server1.cpp",
+            "/home/han/CPP/Weather/public/_public.cpp"
+        ],
+        "file": "server1.cpp"
+    }
+]
