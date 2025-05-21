@@ -13,9 +13,9 @@ void EXIT(int sig) // 程序退出和信号2、15的处理函数。
 int main(int argc, char *argv[])
 {
     // 处理程序的退出信号。
-    signal(SIGINT, EXIT);
-    signal(SIGTERM, EXIT);
-    // closeioandsignal(true);
+    // signal(SIGINT, EXIT);
+    // signal(SIGTERM, EXIT);
+    closeioandsignal(true);
 
     pactive.addpinfo(atoi(argv[1]), "demo02"); // 把当前进程的信息加入共享内存进程组中。
 
